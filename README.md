@@ -30,7 +30,7 @@ O código usa a ordem de segmentos **a, b, c, d, e, f, g**. Em cada linha de seg
 **A0:** deixe sem conexão para variar a semente pseudoaleatória. Essa técnica não garante aleatoriedade criptográfica, mas é suficiente para uma demonstração didática.
 
 
-## Como carregar e testar
+## Como carregar
 
 1. Monte o circuito com o Arduino desconectado do USB.
 2. Abra `src/sorteio_7_segmentos.ino` na Arduino IDE.
@@ -40,8 +40,4 @@ O código usa a ordem de segmentos **a, b, c, d, e, f, g**. Em cada linha de seg
 6. Pressione SORTEAR: a animação para e um número fica no display.
 7. Pressione INICIAR novamente: o display apaga; pressione outra vez para começar nova animação.
 
-## Diagrama da montagem
 
-A imagem `montagem.png` mostra o arranjo em protoboard adaptado à referência. A pinagem indicada corresponde ao sketch: D3–D9 para os segmentos, D11 para INICIAR e D12 para SORTEAR. Use um resistor de 220–330 Ω em série com cada segmento (7 resistores no total) e ligue o(s) cátodo(s) comum(ns) ao GND.
-
-![Diagrama da montagem do sorteador](montagem.png)
